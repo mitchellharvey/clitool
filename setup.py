@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='sallytools',
+    name='clitools',
     version='1.0.0',
     description='Create simple command line tools',
     url='git@github.com:mitchellharvey/clitool.git',
