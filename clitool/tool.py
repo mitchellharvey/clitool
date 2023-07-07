@@ -20,12 +20,6 @@ class CLITool:
 
         self.args = parser.parse_args()
 
-        try:
-        except json.decoder.JSONDecodeError as e:
-            raise ValueError("Bad JSON format for credentials file: {}".format(self.args.credentials))
-        except Exception as e:
-            raise ValueError("Unable to load specified credentials file: {}\n{}".format(self.args.credentials, e))
-
     def register_command(self, function, name=None, description=None):
         self.cli.register_command(function, name=name, description=description)
 
