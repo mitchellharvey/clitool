@@ -20,6 +20,8 @@ class CLITool:
 
         self.args = parser.parse_args()
 
+        self.register_command(quit, name='q', description="Exit the program")
+
     def register_command(self, function, name=None, description=None):
         self.cli.register_command(function, name=name, description=description)
 
