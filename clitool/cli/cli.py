@@ -2,7 +2,12 @@ import inspect
 import traceback
 import json
 import re
-import readline
+
+try:
+    # Only useful on unix systems
+    import readline
+except ImportError:
+    pass
 
 class CLI:
 
