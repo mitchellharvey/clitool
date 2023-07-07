@@ -31,7 +31,7 @@ class CLI:
 
         self._command_map[name] = {
             'function' : function,
-            'args' : inspect.getargspec(function),
+            'args' : inspect.getfullargspec(function),
             'description' : description
         }
 
